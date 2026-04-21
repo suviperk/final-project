@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header className="sticky top-0 z-40 bg-brand-dark text-white shadow-soft">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="w-full px-6">
         <div className="flex h-16 items-center justify-between">
 
           <a href="/" className="flex items-center gap-3 flex-1">

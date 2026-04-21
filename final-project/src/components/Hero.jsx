@@ -9,7 +9,7 @@ function Hero() {
         Simplify Resource Booking – Securely
       </h1>
 
-      <p className="mt-4 text-lg max-w-2xl text-black/70">
+      <p className="mt-4 text-lg text-black/70">
         Simplify resource and user management in one secure system. Show availability publicly without exposing personal details.
       </p>
 

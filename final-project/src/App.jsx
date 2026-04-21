@@ -1,27 +1,40 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+
 import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
-import StatusCard from './components/Statuscard'
-import BookingsTable from './components/Bookings'
+import StatusCard from "./components/Statuscard"
+import BookingsTable from "./components/Bookings"
+import RegisterPage from "./RegisterPage"
 
 function App() {
   return (
-     <>
+     <Router>
+      
+      
       <Header />
+   
+      <main className="flex-grow w-full px-6">
 
-      <main className="mx-auto max-w-7xl px-6">
-
-        <section className="py-16 grid gap-12 lg:grid-cols-12 items-stretch">
+       <Routes>
+      <Route path="/" element={
+        <>
+        <section className="py-16 flex flex-col lg:flex-row gap-12">
           <Hero />
           <StatusCard />
         </section>
 
         <BookingsTable />
+      </>
+      } />
 
+      <Route path="/register" element={<RegisterPage />} />
+
+      </Routes>
       </main>
 
       <Footer />
-    </>
+    </Router>
     
   )
 }
